@@ -1,15 +1,15 @@
-:root {
-  --primary-color: #2563eb;
-  --text-color: #1e293b;
-  --bg-color: #f8fafc;
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* Не забудьте закруглити кути */
+  overflow: hidden;
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: sans-serif;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
-
-h1 {
-  color: var(--primary-color);
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
